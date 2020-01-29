@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class eje3guia {
 	public static void main(String[] args) {
-		Double sueldobase, dias, gratificacion, horasextras, comision, bono, colacion, movilizacion;
-		Double afp, isapre, segurocesantia;
+		Double sueldobase, dias, gratificacion, horasextras, comision, bono, colacion, movilizacion, haberes, deberes;
+		Double afp, isapre, segurocesantia, valorhora=3.500, haberHoras, sueldoliquido;
 		int opc;
 		
 		
@@ -22,7 +22,7 @@ public class eje3guia {
 		
 		System.out.println("Ingrese horas extras: ");
 		horasextras = Teclado.nextDouble();
-		
+		haberHoras = valorhora*horasextras;
 		System.out.println("Ingrese dinero comisión del mes: ");
 		comision = Teclado.nextDouble();
 		
@@ -30,9 +30,12 @@ public class eje3guia {
 		colacion = 8.000;
 		movilizacion = 15.000;
 		
+		haberes = bono + colacion + movilizacion + ((sueldobase*gratificacion)/100) + haberHoras +comision;
 		
 		afp = 0.115;
 		segurocesantia = 0.0411;
+		
+		deberes = sueldobase*afp + sueldobase*segurocesantia;
 		
 		do {
 		System.out.println("1.-ISAPRE o 2.-FONASAS: ");
@@ -53,9 +56,9 @@ public class eje3guia {
 			
 			break;
 		}
-		
-		System.out.println("Sueldo base: "+sueldobase);
-		System.out.println("Sueldo liquido ");
+		sueldoliquido= sueldobase+haberes+deberes;
+		System.out.printf("\n Sueldo base: %s ",sueldobase);
+		System.out.printf("\n Sueldo liquido: &s",sueldoliquido);
 		
 		
 	}
