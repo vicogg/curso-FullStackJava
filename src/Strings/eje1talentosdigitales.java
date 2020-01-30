@@ -38,7 +38,7 @@ public class eje1talentosdigitales {
 		
 		System.out.printf("\n Comprobando la igualdad: %s",palabra1lower.equals(palabra1lower));
 		
-		System.out.printf("\n Si palabra1 = pal1lower: %s",cap1.equalsIgnoreCase(pal1lower));
+		System.out.printf("\n Si palabra1 = pal1lower: %s",cap1.equalsIgnoreCase(palabra1lower));
 		
 		System.out.printf("\n Cambiando a minusculas: %s",texto.toLowerCase());
 
