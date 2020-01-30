@@ -5,11 +5,7 @@ public class ejercicio6 {
 			
 			int multiplo = 5, valor;
 			Scanner Teclado = new Scanner(System.in);
-			
-//			for (valor = 5; valor <= 50; valor=valor+5) {
-//				
-//				System.out.printf(" \n dato: %s x %s: %s ",multiplo, valor, (multiplo*(valor)));
-//			}
+
 			
 			for (int i = 0; i <= 50; i++) {
 				if (i>4) {
