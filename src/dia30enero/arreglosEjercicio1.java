@@ -9,6 +9,8 @@ public class arreglosEjercicio1 {
 		int cantidad;
 		cantidad =2;
 		String Usuario[];
+		
+		Scanner Teclado = new Scanner(System.in);
 		Usuario = new String [cantidad];
 		
 		Usuario[0]= "Pablo, 23, Masculino";
@@ -17,7 +19,11 @@ public class arreglosEjercicio1 {
 			System.out.printf("\n%s",Usuario[i]);
 			
 		}
-		Scanner Teclado = new Scanner(System.in);
+		
+		
+		
+		
+		
 		
 		
 	}
