@@ -77,7 +77,7 @@ public class Cuenta {
 			System.out.printf("\n El monto a retirar es: %s",monto_a_retirar);
 			cantidad = cantidad - monto_a_retirar;
 			System.out.printf("\n El saldo actual de su cuenta es %s \n", cantidad);
-			}
+				}
 		
 		return cantidad;
 		
