@@ -1,6 +1,6 @@
 package dia11febEjercicio2;
 import java.util.Scanner;
-public class Proceso {
+public class Proceso1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
