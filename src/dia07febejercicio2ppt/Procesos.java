@@ -22,7 +22,6 @@ public class Procesos {
 		precio = Teclado.nextDouble();
 		papa_lays.setPrecio(precio);
 		
-		
 		System.out.printf("El producto %s con código %s tiene un precio de: %.0f ", papa_lays.getNombre(), papa_lays.getCodigo(), papa_lays.getPrecio());
 	}
 	
